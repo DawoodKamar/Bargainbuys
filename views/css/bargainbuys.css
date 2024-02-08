@@ -1,0 +1,38 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+.cheapest-products{
+    overflow: hidden;
+}
+.cheapest-products > h2 {
+    text-align: center;
+}
+
+.cheapest-products > ul {
+    width: 300%; 
+    animation: slideInOut 11s ease-in-out infinite;
+    display: flex;
+}
+
+.bargain-product{
+    width: 33.333%;
+    flex-shrink: 0; 
+    text-align: center;
+}
+@keyframes slideInOut {
+    0%, 25%, 100% { transform: translateX(0); }
+    30%, 35% { transform: translateX(-33.333%); } 
+    40%, 65% { transform: translateX(-33.333%); } 
+    70%, 75% { transform: translateX(-66.666%); } 
+    80%, 95% { transform: translateX(-66.666%); } 
+}
+
+.bargain-product h3{
+    padding-top: 15px;
+}
+
+.bargain-product p{
+    color: black;
+    font-weight: bolder;
+}
